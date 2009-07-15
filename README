@@ -1,0 +1,60 @@
+qtmpc
+------------------------------------------
+QtMPC is a Qt4-based front-end for the Music Player Daemon.
+
+Runtime requirements:
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+  libQtCore4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtNetwork4-4.5.1-1
+  libQtXml4-4.5.1-1
+  libstdc++6-4.3.2-2
+  mpd-0.15-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+
+Canonical website:
+  http://qtmpc.lowblog.nl/
+
+Canonical download:
+  http://files.lowblog.nl/qtmpc/
+
+-------------------------------------------
+
+Build instructions:
+  unpack qtmpc-0.5.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./qtmpc-0.5.0-X.cygport all
+
+This will create:
+  /usr/src/qtmpc-0.5.0-X-src.tar.bz2
+  /usr/src/qtmpc-0.5.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/QtMPC.exe
+  /usr/share/applications/QtMPC.desktop
+  /usr/share/doc/qtmpc/LICENSE
+  /usr/share/pixmaps/qtmpc.svg
+
+------------------
+
+Port Notes:
+
+----- version 0.5.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
