@@ -1,4 +1,0 @@
-category: Audio KDE
-requires: libgcc1 libQtCore4 libQtGui4 libQtNetwork4 libQtXml4 libstdc++6 mpd
-sdesc: "Qt4 Music Player Daemon client"
-ldesc: "QtMPC is a Qt4-based front-end for the Music Player Daemon."

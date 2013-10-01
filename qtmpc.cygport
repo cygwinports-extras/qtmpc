@@ -1,0 +1,18 @@
+inherit qt4-qmake
+
+NAME="qtmpc"
+VERSION=0.6.1
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Qt Music Player Daemon client"
+DESCRIPTION="QtMPC is a Qt4-based front-end for the Music Player Daemon."
+REQUIRES="mpd"
+HOMEPAGE="http://qtmpc.lowblog.nl/"
+SRC_URI="http://files.lowblog.nl/qtmpc/QtMPC-${VERSION}.tar.bz2"
+SRC_DIR="QtMPC"
+
+src_install() {
+	dobin ${B}/QtMPC.exe
+	newicon ${S}/images/icon.svg qtmpc.svg
+	make_desktop_entry QtMPC QtMPC qtmpc "AudioVideo;Audio;Player;Qt"
+}
